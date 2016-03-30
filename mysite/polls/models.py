@@ -7,7 +7,7 @@ from django.utils.encoding import python_2_unicode_compatible
 from django.utils import timezone
 
 class Question(models.Model):
-    question_text = models.CharField(max_length=200)
+    question_text = models.CharField(max_length=300)
     pub_date = models.DateTimeField('date published')
     @python_2_unicode_compatible
     def __str__(self):
